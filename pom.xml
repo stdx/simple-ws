@@ -22,6 +22,7 @@
 		</dependency>
 	</dependencies>
 
+
 	<build>
 		<plugins>
 			<plugin>
@@ -40,6 +41,7 @@
 							<wsdlFile>src/main/wsdl/HelloWorld.wsdl</wsdlFile>
 							<generateServerSide>true</generateServerSide>
 							<generateServerSideInterface>true</generateServerSideInterface>
+							<generateServicesXml>true</generateServicesXml>
 						</configuration>
 					</execution>
 				</executions>

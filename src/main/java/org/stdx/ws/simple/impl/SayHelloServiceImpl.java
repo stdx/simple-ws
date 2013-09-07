@@ -5,6 +5,10 @@ import org.stdx.ws.simple.HelloWorldServiceSkeletonInterface;
 import com.moodykettle.webservice.helloworld.SayHello;
 import com.moodykettle.webservice.helloworld.SayHelloResponse;
 
+
+/**
+ * The Class SayHelloServiceImpl.
+ */
 public class SayHelloServiceImpl implements HelloWorldServiceSkeletonInterface {
 
 	
@@ -19,6 +23,13 @@ public class SayHelloServiceImpl implements HelloWorldServiceSkeletonInterface {
 		return response;
 	}
 
+	
+	/**
+	 * Say hello.
+	 *
+	 * @param name the name
+	 * @return the string
+	 */
 	private String sayHello(String name) {
 		String to = "world";
 		if (name != null || name.trim().length() != 0) {
