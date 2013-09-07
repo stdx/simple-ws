@@ -1,6 +1,7 @@
-package org.stdx.ws.simple;
+package org.stdx.ws.simple.impl;
 
-import com.foo.myservice.HelloWorldServiceSkeletonInterface;
+import org.stdx.ws.simple.HelloWorldServiceSkeletonInterface;
+
 import com.moodykettle.webservice.helloworld.SayHello;
 import com.moodykettle.webservice.helloworld.SayHelloResponse;
 
