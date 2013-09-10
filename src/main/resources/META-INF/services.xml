@@ -3,7 +3,7 @@
         <messageReceivers>
             <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.stdx.ws.simple.HelloWorldServiceMessageReceiverInOut"/>
         </messageReceivers>
-        <parameter name="ServiceClass">org.stdx.ws.simple.HelloWorldServiceSkeleton</parameter>
+        <parameter name="ServiceClass">org.stdx.ws.simple.impl.SayHelloServiceImpl</parameter>
         <parameter name="useOriginalwsdl">true</parameter>
         <parameter name="modifyUserWSDLPortAddress">true</parameter>
         <operation name="sayHello" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://helloworld.webservice.stdx.org">
