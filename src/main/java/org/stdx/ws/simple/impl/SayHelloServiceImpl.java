@@ -1,9 +1,8 @@
 package org.stdx.ws.simple.impl;
 
+import org.stdx.webservice.helloworld.SayHello;
+import org.stdx.webservice.helloworld.SayHelloResponse;
 import org.stdx.ws.simple.HelloWorldServiceSkeletonInterface;
-
-import com.moodykettle.webservice.helloworld.SayHello;
-import com.moodykettle.webservice.helloworld.SayHelloResponse;
 
 
 /**
