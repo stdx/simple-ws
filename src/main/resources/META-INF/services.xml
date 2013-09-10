@@ -6,9 +6,9 @@
         <parameter name="ServiceClass">org.stdx.ws.simple.HelloWorldServiceSkeleton</parameter>
         <parameter name="useOriginalwsdl">true</parameter>
         <parameter name="modifyUserWSDLPortAddress">true</parameter>
-        <operation name="sayHello" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://helloworld.webservice.moodykettle.com">
-            <actionMapping>http://helloworld.webservice.moodykettle.com/HelloWorld/sayHelloRequest</actionMapping>
-            <outputActionMapping>http://helloworld.webservice.moodykettle.com/HelloWorld/sayHelloResponse</outputActionMapping>
+        <operation name="sayHello" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://helloworld.webservice.stdx.org">
+            <actionMapping>http://helloworld.webservice.stdx.org/HelloWorld/sayHelloRequest</actionMapping>
+            <outputActionMapping>http://helloworld.webservice.stdx.org/HelloWorld/sayHelloResponse</outputActionMapping>
         </operation>
     </service>
 </serviceGroup>

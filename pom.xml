@@ -26,6 +26,22 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation><activeByDefault /></activation>
+			<properties>
+				<axis2.generateServicesXml>false</axis2.generateServicesXml>
+			</properties>
+		</profile>
+		<profile>
+			<id>init</id>
+			<properties>
+				<axis2.generateServicesXml>true</axis2.generateServicesXml>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
@@ -45,7 +61,7 @@
 							<wsdlFile>src/main/wsdl/HelloWorld.wsdl</wsdlFile>
 							<generateServerSide>true</generateServerSide>
 							<generateServerSideInterface>true</generateServerSideInterface>
-							<generateServicesXml>true</generateServicesXml>
+							<generateServicesXml>${axis2.generateServicesXml}</generateServicesXml>
 						</configuration>
 					</execution>
 				</executions>
